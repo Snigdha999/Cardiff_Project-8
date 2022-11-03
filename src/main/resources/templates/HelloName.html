@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <header th:fragment="newHeader">
+        <h1>This is a new header</h1>
+    </header>
+    <body>
+    <div th:object="${data}">
+        <h1>Hello <span th:utext= "*{firstName}" > World </span>
+        <span th:utext= "*{surname}" > World </span></h1>
+    </div>
+    <table >
+        <tr th:each="name:${names}">
+            <td th:text="${name.firstName}"></td><td th:text="${name.surname}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>

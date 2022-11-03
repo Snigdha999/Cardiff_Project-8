@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="myHead">
+    <meta charset="UTF-8">
+    <title>ConsistentSite</title>
+    <style>
+        h1{color:red}
+    </style>
+</head>
+<body>
+    <header th:fragment="myHeader">
+        <h1>Consistent Site Header</h1>
+    </header>
+    <header th:fragment="newHeader">
+        <h1>This is a new header</h1>
+    </header>
+
+    <footer th:fragment="myFooter">
+        <p>Here is all the footer stuff that we need in our page.</p>
+        <p>Web Page by: </p><address> devs@acme.inc </address>
+    </footer>
+</body>
+</html>

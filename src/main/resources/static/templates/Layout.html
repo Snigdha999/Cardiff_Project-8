@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="Fragments::myHead">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header th:replace="Fragments::myHeader"></header>
+    <header th:fragment="newHeader">
+        <h1>This is a new header</h1>
+    </header>
+    <main>
+        <h3>This is the page specific content</h3>
+        <p> bla bla bla!</p>
+    </main>
+    <footer th:replace="Fragments::myFooter"></footer>
+</body>
+</html> 
